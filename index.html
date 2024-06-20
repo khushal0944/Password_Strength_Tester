@@ -40,7 +40,7 @@
             top: 0;
             left: 0;
             background-color: hsl(312, 87%, 84%);;
-            width: calc(1% * var(--strength),0);
+            width: calc(var(--strength) * 1%);
             height: 2rem;
         }
         input{
@@ -65,7 +65,7 @@
     <div id="mainBox">
         <h1>Password Strength Tester</h1>
         <div id="strength-meter"></div>
-        <input type="text" id="password" value="Password" autofocus/>
+        <input type="text" id="password" autofocus/>
         <div id="reasons"></div>
     </div>
 </body>
